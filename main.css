@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color:black;
+  background-color:white;
   margin: 0;
   padding: 0;
 }
@@ -25,10 +25,8 @@ h3 {
 /* Header */
 
 .logo {
-  height: 75px;
+  height: 100px;
   position: absolute;
-  margin-left: 25px;
-  margin-top: 25px;
 }
 @media only screen and (max-width: 600px) {
 .logo {
@@ -124,21 +122,27 @@ h3 {
   }
 }
 
+/* Banner Text */
+
 .index-banner h1 {
   color: white;
   font-family: Staatliches;
-  font-size: 64px;
-  text-shadow: 2px 2px 2px #372C34;
+  font-size: 100px;
   text-align: right;
-  margin-right: 10%;
+  margin: 5% 10% 0 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .index-banner h1 {
+    font-size: 50px;
+  }
 }
 
 .index-banner h2 {
   font-family: Open Sans;
   font-size: 20px;
   text-align: right;
-  margin-right: 10%;
-  margin-left: 50%;
+  margin: 0 10% 1% 50%;
   line-height: 1.75em;
   
 }
@@ -157,7 +161,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 938px) {
+@media only screen and (max-width: 1117px) {
   .index-banner h2 {
     margin-right: 10%;
     margin-left: 20%;
@@ -169,8 +173,11 @@ a.banner-shop {
   margin-right: 10%;
 }
 
+/* Banner Image */
+
 .bottle {
   float: left;
+  margin-left: 10%;
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
@@ -196,7 +203,7 @@ a.banner-shop {
   animation-delay: 0.7s;
 }
 
-@media only screen and (max-width: 938px) {
+@media only screen and (max-width: 1117px) {
   .bottle {
     display: none;
   }
@@ -252,6 +259,12 @@ a.banner-shop {
   margin: 0 0 0 5%;
 }
 
+@media only screen and (max-width: 860px) {
+  .content-box, .content-boxrev {
+  margin: 0;
+}
+}
+
 .content-title + .content-text {
   padding: 0 30px 0 0px;
 }
@@ -290,7 +303,7 @@ a.link-buttons:hover, a:active {
   transition: .5s;
 }
 
-/* Bio */
+/* Our Story Section */
 
 .footer-divider {
   width: auto;
@@ -374,10 +387,18 @@ footer ul {
   text-align: center;
 }
 
+.footer-about {
+  line-height: 1.75em;
+}
+
+.footer a {
+  color: white;
+}
+
 /* Form */
 
 input[type=email] {
-  width: 100%;
+
   border-radius: 4px;
   border: 1px solid #ccc;
   padding: 12px 20px;
@@ -394,8 +415,4 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.footer-about {
-  line-height: 1.75em;
 }
