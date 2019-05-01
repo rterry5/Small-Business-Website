@@ -13,7 +13,7 @@ p {
 }
 
 h2 {
-  font-family: 'Staatliches Regular';
+  font-family: 'Staatliches';
   font-size: 40px;
 }
 
@@ -22,16 +22,46 @@ h3 {
   font-size: 16px;
 }
 
-/* Header */
+/* Logo */
 
 .logo {
   height: 100px;
-  position: absolute;
+
 }
+
 @media only screen and (max-width: 600px) {
 .logo {
     display: inline-block;
     position: relative;
+    margin: 0;
+  }
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media only screen and (max-width: 600px) {
+  .zoom {
+    transition: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .zoom:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gap {
+    display: none;
   }
 }
 
@@ -42,6 +72,8 @@ h3 {
     }
   }
 
+  /* Navigation */
+
 .nav ul {
   list-style: none;
   background-color: #372C34;
@@ -50,7 +82,7 @@ h3 {
   margin: 0;
 }
 .nav li {
-  font-family: 'Staatliches Regular';
+  font-family: 'Staatliches';
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -81,26 +113,11 @@ h3 {
     line-height: 50px;
     font-size: 1.4em;
   }
- 
-  /* Option 1 - Display Inline */
+
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
- 
-  /* Options 2 - Float
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
-  .nav {
-    background-color: #444;
-  }
-  */
 }
 
 /* Banner */
@@ -180,6 +197,26 @@ a.banner-shop {
   margin-left: 10%;
 }
 
+@media only screen and (max-width: 1233px) {
+  .bottle {
+    width: 510px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1117px) {
+  .bottle {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 983px) {
+  .bottle {
+    display: none;
+  }
+}
+
+
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
@@ -201,12 +238,6 @@ a.banner-shop {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   animation-delay: 0.7s;
-}
-
-@media only screen and (max-width: 1117px) {
-  .bottle {
-    display: none;
-  }
 }
 
 /* Main Content */
