@@ -26,7 +26,7 @@ h3 {
 
 .logo {
   height: 100px;
-
+  padding-top: 2vh;
 }
 
 .nav ul li .logolink:hover {
@@ -134,7 +134,7 @@ h3 {
 
 .index-banner {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(80vh - 200px);
   background: url(images/bomb1.png), -webkit-linear-gradient(30deg, #EF4939 50%, #0FB7B8 50%);
   background-repeat: no-repeat;
   background-position: right, center;
@@ -368,7 +368,7 @@ a.link-buttons:hover, a:active {
 }
 
 .bio-content {
-  padding: 10%;
+  padding: 10% 5% 0 5%;
   text-align: center;
   line-height: 1.75em;
 }
