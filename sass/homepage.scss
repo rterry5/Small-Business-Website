@@ -1,0 +1,329 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #372C34;
+    ul {
+        list-style: none;
+        background-color: #372C34;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        font-family: 'Staatliches';
+        font-size: 1.2em;
+        line-height: 40px;
+        height: 40px
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        transition: .3s background-color;
+        &:hover {
+            background-color: #0FB7b8;
+        }
+        .active {
+            background-color: #fff;
+            color: #444;
+            cursor: default;
+        }
+    }
+    .logolink {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    .nav-list {
+        display: flex;
+    }
+}
+
+.logo {
+    height: 100px;
+    padding-top: 2vh;
+}
+
+.zoom {
+     transition: transform .2s;
+     margin: 0 auto;
+     &:hover {
+        transform: scale(1.3);
+     }
+}
+
+ /* Banner */
+
+.index-banner {
+    width: 100%;
+    height: calc(80vh - 200px);
+    background: url(D:/Business-Website/Images/bomb1.png), -webkit-linear-gradient(30deg, #EF4939 50%, #0FB7B8 50%);
+    background-repeat: no-repeat;
+    background-position: right, center;
+    background-size: 600px, cover;
+    display: table;
+    h1 {
+        color: white;
+        font-family: Staatliches;
+        font-size: 100px;
+        text-align: right;
+        margin: 5% 10% 0 0;
+    }
+    h2 {
+        font-family: Open Sans;
+        font-size: 20px;
+        text-align: right;
+        margin: 0 10% 1% 50%;
+        line-height: 1.75em;
+    }
+}
+
+ a {
+    &.banner-shop {
+        float: right;
+        margin-right: 10%;
+    }
+}
+
+ .bottle {
+    float: left;
+    margin-left: 10%;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+/* Main Content */
+
+.header-divider {
+    width: auto;
+    border: 10px solid #372C34;
+    margin: auto;
+}
+
+.main-content {
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.container {
+    margin: 2% 0 2% 0;
+    padding-bottom: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.container-reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.imageshadow1 {
+    box-shadow: 20px 20px #372C34;
+}
+  
+.imageshadow2 {
+    box-shadow: -20px 20px #EF4939;
+}
+  
+.imageshadow3 {
+    box-shadow: 20px 20px #0FB7B8;
+}
+  
+.content-box {
+    width: 400px;
+    height: auto;
+    margin: 0 5% 0 0;
+    line-height: 1.75em;
+}
+  
+.content-boxrev {
+    height: auto;
+    margin: 0 0 0 5%;
+}
+
+.content-title + .content-text {
+    padding: 0 30px 0 0px;
+}
+  
+.content-titlerev + .content-textrev {
+    padding: 0 0 0 30px;
+}
+
+.title-divider {
+    border: 1px dashed #372C34;
+    width: 50%;
+    margin: auto auto 10px 0;
+}
+
+.reverse-line {
+    margin: auto 0 10px auto;
+}
+
+a {
+    &.link-buttons {
+        &:link, &:visited {
+            background-color: #F1782E;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-family: 'Open Sans';
+            font-weight: bold;
+            font-size: 14px;
+            width: 125px;
+            margin-bottom: 10%;
+        }
+        &:hover, &:active {
+            background-color: #EF4939; 
+            transition: .5s;
+        }
+    }
+}
+
+/* Our Story Section */
+
+.footer-divider {
+    width: auto;
+    border: 40px solid #EF4939;
+    margin: auto;
+}
+
+.content-container {
+    background-color: #0FB7B8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 400px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .story-title {
+        margin: 0;
+    }
+}
+
+.bio-content {
+    padding: 10% 5% 0 5%;
+    text-align: center;
+    line-height: 1.75em;
+}
+  
+.bio-divider {
+    width: auto;
+    border: 10px solid #F1782E;
+    margin: auto;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #372C34;
+    justify-content: space-evenly;
+    color: white;
+    flex-flow: row wrap;
+    padding-bottom: 40px;
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            color: white;
+            font-family: 'Open Sans';
+            a {
+                color: white;
+                &:hover {
+                    color: #0FB7B8;
+                    transition: .4s;
+                }
+            }
+        }
+    }
+}
+
+.footer-heading {
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color: #0FB7B8;
+}
+  
+.column {
+    width: 300px;
+    margin-top: 25px;
+}
+  
+.footer-logo {
+    height: 50px;
+}
+
+.copyright {
+    text-align: center;
+}
+  
+.footer-about {
+    line-height: 1.75em;
+}
+
+.social-media {
+    img {
+    width: 30px;
+    float: left;
+    padding-right: 15px;
+  }
+}
+
+/* Form */
+
+input[type=email] {
+
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: 'Open Sans';
+  }
+  
+input[type=submit] {
+    width: 50%;
+    background-color: #F1782E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
