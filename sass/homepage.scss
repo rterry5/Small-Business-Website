@@ -64,12 +64,12 @@
 
 .index-banner {
     width: 100%;
-    height: calc(80vh - 200px);
+    // height: calc(80vh - 200px);
     background: url(D:/Business-Website/Images/bomb1.png), -webkit-linear-gradient(30deg, #EF4939 50%, #0FB7B8 50%);
     background-repeat: no-repeat;
     background-position: right, center;
     background-size: 600px, cover;
-    display: table;
+    display: flex;
     h1 {
         color: white;
         font-family: Staatliches;
@@ -96,6 +96,7 @@
  .bottle {
     float: left;
     margin-left: 10%;
+    height: 37em;
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
@@ -159,6 +160,10 @@
   
 .imageshadow3 {
     box-shadow: 20px 20px #0FB7B8;
+}
+
+.easeInSine {
+
 }
   
 .content-box {

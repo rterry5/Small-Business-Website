@@ -71,12 +71,11 @@
 /* line 65, ../sass/homepage.scss */
 .index-banner {
   width: 100%;
-  height: calc(80vh - 200px);
   background: url(D:/Business-Website/Images/bomb1.png), -webkit-linear-gradient(30deg, #EF4939 50%, #0FB7B8 50%);
   background-repeat: no-repeat;
   background-position: right, center;
   background-size: 600px, cover;
-  display: table;
+  display: flex;
 }
 /* line 73, ../sass/homepage.scss */
 .index-banner h1 {
@@ -89,7 +88,7 @@
 /* line 80, ../sass/homepage.scss */
 .index-banner h2 {
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 22px;
   text-align: right;
   margin: 0 10% 1% 50%;
   line-height: 1.75em;
@@ -105,6 +104,7 @@ a.banner-shop {
 .bottle {
   float: left;
   margin-left: 10%;
+  height: 37em;
 }
 
 @-webkit-keyframes fadeIn {
@@ -137,7 +137,7 @@ a.banner-shop {
     opacity: 1;
   }
 }
-/* line 105, ../sass/homepage.scss */
+/* line 106, ../sass/homepage.scss */
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */
@@ -158,21 +158,21 @@ a.banner-shop {
 }
 
 /* Main Content */
-/* line 126, ../sass/homepage.scss */
+/* line 127, ../sass/homepage.scss */
 .header-divider {
   width: auto;
   border: 10px solid #372C34;
   margin: auto;
 }
 
-/* line 133, ../sass/homepage.scss */
+/* line 134, ../sass/homepage.scss */
 .main-content > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 140, ../sass/homepage.scss */
+/* line 141, ../sass/homepage.scss */
 .container {
   margin: 2% 0 2% 0;
   padding-bottom: 50px;
@@ -180,28 +180,28 @@ a.banner-shop {
   width: 100%;
 }
 
-/* line 147, ../sass/homepage.scss */
+/* line 148, ../sass/homepage.scss */
 .container-reverse {
   flex-direction: row-reverse;
   text-align: right;
 }
 
-/* line 152, ../sass/homepage.scss */
+/* line 153, ../sass/homepage.scss */
 .imageshadow1 {
   box-shadow: 20px 20px #372C34;
 }
 
-/* line 156, ../sass/homepage.scss */
+/* line 157, ../sass/homepage.scss */
 .imageshadow2 {
   box-shadow: -20px 20px #EF4939;
 }
 
-/* line 160, ../sass/homepage.scss */
+/* line 161, ../sass/homepage.scss */
 .imageshadow3 {
   box-shadow: 20px 20px #0FB7B8;
 }
 
-/* line 164, ../sass/homepage.scss */
+/* line 169, ../sass/homepage.scss */
 .content-box {
   width: 400px;
   height: auto;
@@ -209,35 +209,35 @@ a.banner-shop {
   line-height: 1.75em;
 }
 
-/* line 171, ../sass/homepage.scss */
+/* line 176, ../sass/homepage.scss */
 .content-boxrev {
   height: auto;
   margin: 0 0 0 5%;
 }
 
-/* line 176, ../sass/homepage.scss */
+/* line 181, ../sass/homepage.scss */
 .content-title + .content-text {
   padding: 0 30px 0 0px;
 }
 
-/* line 180, ../sass/homepage.scss */
+/* line 185, ../sass/homepage.scss */
 .content-titlerev + .content-textrev {
   padding: 0 0 0 30px;
 }
 
-/* line 184, ../sass/homepage.scss */
+/* line 189, ../sass/homepage.scss */
 .title-divider {
   border: 1px dashed #372C34;
   width: 50%;
   margin: auto auto 10px 0;
 }
 
-/* line 190, ../sass/homepage.scss */
+/* line 195, ../sass/homepage.scss */
 .reverse-line {
   margin: auto 0 10px auto;
 }
 
-/* line 196, ../sass/homepage.scss */
+/* line 201, ../sass/homepage.scss */
 a.link-buttons:link, a.link-buttons:visited {
   background-color: #F1782E;
   color: white;
@@ -252,46 +252,46 @@ a.link-buttons:link, a.link-buttons:visited {
   width: 125px;
   margin-bottom: 10%;
 }
-/* line 210, ../sass/homepage.scss */
+/* line 215, ../sass/homepage.scss */
 a.link-buttons:hover, a.link-buttons:active {
   background-color: #EF4939;
   transition: .5s;
 }
 
 /* Our Story Section */
-/* line 219, ../sass/homepage.scss */
+/* line 224, ../sass/homepage.scss */
 .footer-divider {
   width: auto;
   border: 40px solid #EF4939;
   margin: auto;
 }
 
-/* line 225, ../sass/homepage.scss */
+/* line 230, ../sass/homepage.scss */
 .content-container {
   background-color: #0FB7B8;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: 400px;
 }
-/* line 230, ../sass/homepage.scss */
+/* line 235, ../sass/homepage.scss */
 .content-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 235, ../sass/homepage.scss */
+/* line 240, ../sass/homepage.scss */
 .content-container .story-title {
   margin: 0;
 }
 
-/* line 240, ../sass/homepage.scss */
+/* line 245, ../sass/homepage.scss */
 .bio-content {
   padding: 10% 5% 0 5%;
   text-align: center;
   line-height: 1.75em;
 }
 
-/* line 246, ../sass/homepage.scss */
+/* line 251, ../sass/homepage.scss */
 .bio-divider {
   width: auto;
   border: 10px solid #F1782E;
@@ -299,7 +299,7 @@ a.link-buttons:hover, a.link-buttons:active {
 }
 
 /* Footer */
-/* line 254, ../sass/homepage.scss */
+/* line 259, ../sass/homepage.scss */
 footer {
   display: flex;
   background-color: #372C34;
@@ -308,55 +308,55 @@ footer {
   flex-flow: row wrap;
   padding-bottom: 40px;
 }
-/* line 261, ../sass/homepage.scss */
+/* line 266, ../sass/homepage.scss */
 footer ul {
   padding: 0;
 }
-/* line 263, ../sass/homepage.scss */
+/* line 268, ../sass/homepage.scss */
 footer ul li {
   list-style: none;
   color: white;
   font-family: 'Open Sans';
 }
-/* line 267, ../sass/homepage.scss */
+/* line 272, ../sass/homepage.scss */
 footer ul li a {
   color: white;
 }
-/* line 269, ../sass/homepage.scss */
+/* line 274, ../sass/homepage.scss */
 footer ul li a:hover {
   color: #0FB7B8;
   transition: .4s;
 }
 
-/* line 278, ../sass/homepage.scss */
+/* line 283, ../sass/homepage.scss */
 .footer-heading {
   font-size: 1.5em;
   letter-spacing: .1em;
   color: #0FB7B8;
 }
 
-/* line 284, ../sass/homepage.scss */
+/* line 289, ../sass/homepage.scss */
 .column {
   width: 300px;
   margin-top: 25px;
 }
 
-/* line 289, ../sass/homepage.scss */
+/* line 294, ../sass/homepage.scss */
 .footer-logo {
   height: 50px;
 }
 
-/* line 293, ../sass/homepage.scss */
+/* line 298, ../sass/homepage.scss */
 .copyright {
   text-align: center;
 }
 
-/* line 297, ../sass/homepage.scss */
+/* line 302, ../sass/homepage.scss */
 .footer-about {
   line-height: 1.75em;
 }
 
-/* line 302, ../sass/homepage.scss */
+/* line 307, ../sass/homepage.scss */
 .social-media img {
   width: 30px;
   float: left;
@@ -364,7 +364,7 @@ footer ul li a:hover {
 }
 
 /* Form */
-/* line 311, ../sass/homepage.scss */
+/* line 316, ../sass/homepage.scss */
 input[type=email] {
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -373,7 +373,7 @@ input[type=email] {
   font-family: 'Open Sans';
 }
 
-/* line 320, ../sass/homepage.scss */
+/* line 325, ../sass/homepage.scss */
 input[type=submit] {
   width: 50%;
   background-color: #F1782E;
