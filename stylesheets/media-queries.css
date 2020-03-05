@@ -1,0 +1,94 @@
+/* Nav and Logo */
+@media only screen and (max-width: 600px) {
+  /* line 4, ../sass/media-queries.scss */
+  .zoom {
+    transition: none;
+    margin: 0;
+  }
+  /* line 7, ../sass/media-queries.scss */
+  .zoom :hover {
+    transform: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 14, ../sass/media-queries.scss */
+  .logo-box {
+    text-align: center;
+    background-color: #372C34;
+  }
+
+  /* line 18, ../sass/media-queries.scss */
+  .gap, .logo-box, .logolink, .logo {
+    display: none;
+  }
+
+  /* line 21, ../sass/media-queries.scss */
+  .nav-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 39, ../sass/media-queries.scss */
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+}
+/* Banner */
+@media only screen and (max-width: 600px) {
+  /* line 51, ../sass/media-queries.scss */
+  .index-banner {
+    background-position: center, center;
+    background-size: 300px, cover;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 58, ../sass/media-queries.scss */
+  .index-banner h2 {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 65, ../sass/media-queries.scss */
+  .index-banner h2 {
+    margin-right: 10%;
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 1117px) {
+  /* line 72, ../sass/media-queries.scss */
+  .index-banner h2 {
+    margin-right: 10%;
+    margin-left: 20%;
+  }
+}
+/* Bottle */
+@media only screen and (max-width: 1233px) {
+  /* line 81, ../sass/media-queries.scss */
+  .bottle {
+    width: 510px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1117px) {
+  /* line 88, ../sass/media-queries.scss */
+  .bottle {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 983px) {
+  /* line 94, ../sass/media-queries.scss */
+  .bottle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 860px) {
+  /* line 100, ../sass/media-queries.scss */
+  .content-box, .content-boxrev {
+    margin: 0;
+  }
+}

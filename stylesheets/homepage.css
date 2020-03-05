@@ -1,0 +1,386 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Navigation */
+/* line 8, ../sass/homepage.scss */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #372C34;
+}
+/* line 13, ../sass/homepage.scss */
+.nav ul {
+  list-style: none;
+  background-color: #372C34;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* line 20, ../sass/homepage.scss */
+.nav li {
+  font-family: 'Staatliches';
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+}
+/* line 26, ../sass/homepage.scss */
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+/* line 31, ../sass/homepage.scss */
+.nav a:hover {
+  background-color: #0FB7b8;
+}
+/* line 34, ../sass/homepage.scss */
+.nav a .active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+/* line 41, ../sass/homepage.scss */
+.nav .logolink:hover {
+  background-color: transparent;
+}
+/* line 45, ../sass/homepage.scss */
+.nav .nav-list {
+  display: flex;
+}
+
+/* line 50, ../sass/homepage.scss */
+.logo {
+  height: 100px;
+  padding-top: 2vh;
+}
+
+/* line 55, ../sass/homepage.scss */
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+/* line 58, ../sass/homepage.scss */
+.zoom:hover {
+  transform: scale(1.3);
+}
+
+/* Banner */
+/* line 65, ../sass/homepage.scss */
+.index-banner {
+  width: 100%;
+  background: url(D:/Business-Website/Images/bomb1.png), -webkit-linear-gradient(30deg, #EF4939 50%, #0FB7B8 50%);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  background-size: 600px, cover;
+  display: flex;
+}
+/* line 73, ../sass/homepage.scss */
+.index-banner h1 {
+  color: white;
+  font-family: Staatliches;
+  font-size: 100px;
+  text-align: right;
+  margin: 5% 10% 0 0;
+}
+/* line 80, ../sass/homepage.scss */
+.index-banner h2 {
+  font-family: Open Sans;
+  font-size: 22px;
+  text-align: right;
+  margin: 0 10% 1% 50%;
+  line-height: 1.75em;
+}
+
+/* line 90, ../sass/homepage.scss */
+a.banner-shop {
+  float: right;
+  margin-right: 10%;
+}
+
+/* line 96, ../sass/homepage.scss */
+.bottle {
+  float: left;
+  margin-left: 10%;
+  height: 37em;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1\9;
+    /* IE9 only */
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1\9;
+    /* IE9 only */
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1\9;
+    /* IE9 only */
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 106, ../sass/homepage.scss */
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+/* Main Content */
+/* line 127, ../sass/homepage.scss */
+.header-divider {
+  width: auto;
+  border: 10px solid #372C34;
+  margin: auto;
+}
+
+/* line 134, ../sass/homepage.scss */
+.main-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 141, ../sass/homepage.scss */
+.container {
+  margin: 2% 0 2% 0;
+  padding-bottom: 50px;
+  height: auto;
+  width: 100%;
+}
+
+/* line 148, ../sass/homepage.scss */
+.container-reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* line 153, ../sass/homepage.scss */
+.imageshadow1 {
+  box-shadow: 20px 20px #372C34;
+}
+
+/* line 157, ../sass/homepage.scss */
+.imageshadow2 {
+  box-shadow: -20px 20px #EF4939;
+}
+
+/* line 161, ../sass/homepage.scss */
+.imageshadow3 {
+  box-shadow: 20px 20px #0FB7B8;
+}
+
+/* line 169, ../sass/homepage.scss */
+.content-box {
+  width: 400px;
+  height: auto;
+  margin: 0 5% 0 0;
+  line-height: 1.75em;
+}
+
+/* line 176, ../sass/homepage.scss */
+.content-boxrev {
+  height: auto;
+  margin: 0 0 0 5%;
+}
+
+/* line 181, ../sass/homepage.scss */
+.content-title + .content-text {
+  padding: 0 30px 0 0px;
+}
+
+/* line 185, ../sass/homepage.scss */
+.content-titlerev + .content-textrev {
+  padding: 0 0 0 30px;
+}
+
+/* line 189, ../sass/homepage.scss */
+.title-divider {
+  border: 1px dashed #372C34;
+  width: 50%;
+  margin: auto auto 10px 0;
+}
+
+/* line 195, ../sass/homepage.scss */
+.reverse-line {
+  margin: auto 0 10px auto;
+}
+
+/* line 201, ../sass/homepage.scss */
+a.link-buttons:link, a.link-buttons:visited {
+  background-color: #F1782E;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 14px;
+  width: 125px;
+  margin-bottom: 10%;
+}
+/* line 215, ../sass/homepage.scss */
+a.link-buttons:hover, a.link-buttons:active {
+  background-color: #EF4939;
+  transition: .5s;
+}
+
+/* Our Story Section */
+/* line 224, ../sass/homepage.scss */
+.footer-divider {
+  width: auto;
+  border: 40px solid #EF4939;
+  margin: auto;
+}
+
+/* line 230, ../sass/homepage.scss */
+.content-container {
+  background-color: #0FB7B8;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
+}
+/* line 235, ../sass/homepage.scss */
+.content-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 240, ../sass/homepage.scss */
+.content-container .story-title {
+  margin: 0;
+}
+
+/* line 245, ../sass/homepage.scss */
+.bio-content {
+  padding: 10% 5% 0 5%;
+  text-align: center;
+  line-height: 1.75em;
+}
+
+/* line 251, ../sass/homepage.scss */
+.bio-divider {
+  width: auto;
+  border: 10px solid #F1782E;
+  margin: auto;
+}
+
+/* Footer */
+/* line 259, ../sass/homepage.scss */
+footer {
+  display: flex;
+  background-color: #372C34;
+  justify-content: space-evenly;
+  color: white;
+  flex-flow: row wrap;
+  padding-bottom: 40px;
+}
+/* line 266, ../sass/homepage.scss */
+footer ul {
+  padding: 0;
+}
+/* line 268, ../sass/homepage.scss */
+footer ul li {
+  list-style: none;
+  color: white;
+  font-family: 'Open Sans';
+}
+/* line 272, ../sass/homepage.scss */
+footer ul li a {
+  color: white;
+}
+/* line 274, ../sass/homepage.scss */
+footer ul li a:hover {
+  color: #0FB7B8;
+  transition: .4s;
+}
+
+/* line 283, ../sass/homepage.scss */
+.footer-heading {
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  color: #0FB7B8;
+}
+
+/* line 289, ../sass/homepage.scss */
+.column {
+  width: 300px;
+  margin-top: 25px;
+}
+
+/* line 294, ../sass/homepage.scss */
+.footer-logo {
+  height: 50px;
+}
+
+/* line 298, ../sass/homepage.scss */
+.copyright {
+  text-align: center;
+}
+
+/* line 302, ../sass/homepage.scss */
+.footer-about {
+  line-height: 1.75em;
+}
+
+/* line 307, ../sass/homepage.scss */
+.social-media img {
+  width: 30px;
+  float: left;
+  padding-right: 15px;
+}
+
+/* Form */
+/* line 316, ../sass/homepage.scss */
+input[type=email] {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-family: 'Open Sans';
+}
+
+/* line 325, ../sass/homepage.scss */
+input[type=submit] {
+  width: 50%;
+  background-color: #F1782E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

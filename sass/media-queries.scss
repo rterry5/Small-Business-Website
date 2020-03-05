@@ -1,0 +1,103 @@
+/* Nav and Logo */
+
+@media only screen and (max-width: 600px) {
+    .zoom {
+      transition: none;
+      margin: 0;
+      :hover {
+        transform: none;
+      }
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .logo-box {
+        text-align: center;
+        background-color: #372C34;
+    }
+    .gap, .logo-box, .logolink, .logo {
+        display: none;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+}
+
+// @media only screen and (max-width: 600px) {
+//     .gap, .logo-box, .logolink, .logo {
+//         display: none;
+//         }
+//     }
+
+// @media only screen and (max-width: 600px) {
+//     .nav-list {
+//         flex-direction: column;
+//       }
+//     }
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        }
+    }
+
+/* Banner */
+
+@media only screen and (max-width: 600px) {
+    .index-banner {
+        background-position: center, center;
+        background-size: 300px, cover;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .index-banner h2 {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .index-banner h2 {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+}
+  
+@media only screen and (max-width: 1117px) {
+    .index-banner h2 {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+}
+
+/* Bottle */
+
+@media only screen and (max-width: 1233px) {
+  .bottle {
+    width: 510px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1117px) {
+  .bottle {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 983px) {
+  .bottle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+    .content-box, .content-boxrev {
+    margin: 0;
+  }
+}
